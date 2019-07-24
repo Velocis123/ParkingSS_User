@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Activity.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentTop="true"
+
+        android:id="@+id/rel1"
+
+
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_20sdp"
+            app:cardBackgroundColor="@color/colorAccent"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:gravity="center"
+                >
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:text="ParkingSS"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_25sdp"
+                    android:layout_centerInParent="true"
+                    android:textStyle="bold"
+                    android:gravity="center"
+                    android:drawableLeft="@drawable/ic_car"
+
+
+                    />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_below="@+id/rel1"
+        android:id="@+id/rel5"
+        android:layout_marginTop="@dimen/_10sdp"
+        >
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_40sdp"
+           android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_2sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            app:cardCornerRadius="@dimen/_3sdp"
+            android:elevation="@dimen/_20sdp"
+            android:id="@+id/car1"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/line"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                >
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:id="@+id/txt_date"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:text="Driver's Status : "
+                    android:textSize="@dimen/_15sdp"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorDark"
+                    android:gravity="center"
+                    android:layout_weight="1"
+
+                    />
+
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:id="@+id/txt_time"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:text="Available"
+                    android:gravity="center"
+                    android:textSize="@dimen/_15sdp"
+                    android:textColor="@color/colorLightGreen"
+                    android:textStyle="bold"
+
+                    />
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+
+    </RelativeLayout>
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/rel5"
+    android:layout_centerInParent="true"
+    >
+        <RelativeLayout
+            android:layout_width="@dimen/_150sdp"
+            android:layout_height="@dimen/_150sdp"
+
+            android:id="@+id/rel2"
+
+            android:layout_marginTop="@dimen/_25sdp"
+            android:layout_centerHorizontal="true"
+
+            >
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card1"
+                android:layout_width="@dimen/_130sdp"
+                android:layout_height="@dimen/_130sdp"
+                android:layout_centerInParent="true"
+                app:cardCornerRadius="@dimen/_100sdp"
+                android:elevation="@dimen/_15sdp"
+
+
+                app:cardBackgroundColor="@color/colorPrimary"
+
+                >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    >
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/ic_pick"
+                    android:id="@+id/img_pick"
+                    android:scaleType="fitXY"
+
+
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="Pickup"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_15sdp"
+
+
+                    android:layout_centerHorizontal="true"
+
+                    />
+</LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/rel3"
+        android:layout_below="@+id/rel2"
+       android:layout_marginTop="@dimen/_30sdp"
+        android:layout_centerHorizontal="true"
+
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="@dimen/_130sdp"
+            android:layout_height="@dimen/_130sdp"
+            android:layout_centerInParent="true"
+            app:cardCornerRadius="@dimen/_100sdp"
+            android:elevation="@dimen/_15sdp"
+
+
+            app:cardBackgroundColor="@color/colorPrimary"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                >
+                <ImageView
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_100sdp"
+                    android:src="@drawable/ic_drop"
+                    android:id="@+id/img_drop"
+                    android:scaleType="fitXY"
+
+
+                    android:layout_gravity="center"
+                    />
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:textColor="@color/colorWhite"
+                    android:textStyle="bold"
+                    android:text="Drop"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:textSize="@dimen/_15sdp"
+
+
+                    android:layout_centerHorizontal="true"
+
+                    />
+            </LinearLayout>
+
+        </androidx.cardview.widget.CardView>
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp"
+        android:layout_alignParentBottom="true"
+        android:background="@color/colorAccent"
+        android:id="@+id/rel4"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:elevation="@dimen/_20sdp"
+
+            >
+            <com.google.android.material.bottomnavigation.BottomNavigationView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                app:labelVisibilityMode="labeled"
+                app:layout_behavior="@string/hide_bottom_view_on_scroll_behavior"
+                app:menu="@menu/menu_bottomnavigation"
+                app:itemIconTint="@drawable/bottom_nav_selected_color"
+                android:id="@+id/bottom_nav_view"
+                app:itemTextColor="@drawable/bottom_nav_selected_color"
+                android:background="@color/colorAccent"
+
+                >
+
+
+
+
+
+            </com.google.android.material.bottomnavigation.BottomNavigationView>
+        </androidx.cardview.widget.CardView>
+
+
+
+
+    </RelativeLayout>
+
+
+
+
+
+
+    </RelativeLayout>
+
