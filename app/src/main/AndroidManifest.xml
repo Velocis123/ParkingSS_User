@@ -6,16 +6,18 @@
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:name=".Application.Flag"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
         <activity android:name=".Activity.Req_Driver"></activity>
-        <activity android:name=".Activity.Vehicle_Type" />
+        <activity android:name=".Activity.Select_vehicle" />
         <activity android:name=".Activity.Payment"/>
         <activity android:name=".Activity.Edit_profile"/>
         <activity android:name=".Activity.Profile"/>
         <activity android:name=".Activity.Status"/>
-        <activity android:name=".Activity.Details"/>
+
+        <activity android:name=".Activity.Acitivity_Details"/>
         <activity android:name=".Activity.MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

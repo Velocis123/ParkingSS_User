@@ -37,7 +37,7 @@ rel3 = findViewById(R.id.rel3);
 rel2.setOnClickListener(new View.OnClickListener() {
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(MainActivity.this, Vehicle_Type.class);
+        Intent intent = new Intent(MainActivity.this, Req_Driver.class);
         startActivity(intent);
     }
 });
@@ -45,7 +45,7 @@ rel2.setOnClickListener(new View.OnClickListener() {
         rel3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MainActivity.this,Vehicle_Type.class);
+                Intent intent = new Intent(MainActivity.this, Req_Driver.class);
                 startActivity(intent);
             }
         });

@@ -4,30 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.Vehicle_Type">
+    tools:context=".Activity.Select_vehicle">
 
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_50sdp"
-        android:layout_below="@+id/rel2"
-        android:id="@+id/rel4"
-        android:layout_marginTop="@dimen/_15sdp"
-      android:layout_centerInParent="true"
-        >
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:fontFamily="@font/avenirltstd_light"
-            android:text="OR"
-            android:gravity="center"
-            android:textColor="@color/colorDark"
-            android:textStyle="bold"
-            android:textSize="@dimen/_20sdp"
-            />
 
-
-    </RelativeLayout>
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -56,7 +36,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:fontFamily="@font/avenirltstd_light"
-                    android:text="Vehicle Type"
+                    android:text="Vehicle"
                     android:textColor="@color/colorWhite"
                     android:textSize="@dimen/_15sdp"
                     android:layout_centerInParent="true"
@@ -69,203 +49,34 @@
             </RelativeLayout>
 
         </androidx.cardview.widget.CardView>
-    </RelativeLayout>
+
+
+            </RelativeLayout>
+
+
 
 
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="@dimen/_200sdp"
-        android:layout_below="@+id/rel1"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:id="@+id/rel2"
+        android:layout_height="wrap_content"
+        android:id="@+id/rel3"
+        android:layout_below="@id/rel1"
+
         >
-        <androidx.cardview.widget.CardView
+        <androidx.recyclerview.widget.RecyclerView
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="@dimen/_3sdp"
-            android:elevation="@dimen/_20sdp"
-            android:layout_margin="@dimen/_10sdp"
+            android:layout_height="wrap_content"
+            android:id="@+id/rec_vehicle"
             >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    android:elevation="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:id="@+id/car1"
-
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/line"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/txt_permanent"
-                            android:fontFamily="@font/avenirltstd_light"
-                            android:text="Permanent"
-                            android:textSize="@dimen/_15sdp"
-                            android:textStyle="bold"
-                            android:layout_gravity="center"
-                            android:textColor="@color/colorDark"
-                            android:gravity="center"
-
-
-                            />
 
 
 
-                            />
-
-
-                    </LinearLayout>
-
-
-
-
-
-
-                </androidx.cardview.widget.CardView>
-
-
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
-android:src="@drawable/permanentt"
-
-
-                    />
-
-
-
-
-            </LinearLayout>
-
-
-
-
-
-        </androidx.cardview.widget.CardView>
+        </androidx.recyclerview.widget.RecyclerView>
 
 
     </RelativeLayout>
 
-    <RelativeLayout
-        android:layout_width="match_parent"
-        android:layout_height="@dimen/_200sdp"
-android:layout_marginTop="@dimen/_20sdp"
-     android:layout_below="@+id/rel4"
-        android:id="@+id/rel5"
 
-
-        >
-        <androidx.cardview.widget.CardView
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            app:cardCornerRadius="@dimen/_3sdp"
-            android:elevation="@dimen/_20sdp"
-            android:layout_margin="@dimen/_10sdp"
-            >
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:orientation="vertical"
-                >
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="@dimen/_30sdp"
-                    android:layout_marginLeft="@dimen/_10sdp"
-                    android:layout_marginRight="@dimen/_10sdp"
-                    android:layout_marginTop="@dimen/_5sdp"
-                    android:layout_marginBottom="@dimen/_2sdp"
-                    app:cardCornerRadius="@dimen/_3sdp"
-                    android:elevation="@dimen/_20sdp"
-                    android:layout_gravity="center"
-                    android:id="@+id/card2"
-
-                    >
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/line"
-                        android:orientation="horizontal"
-                        android:layout_gravity="center"
-                        android:gravity="center"
-
-                        >
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:id="@+id/txt_temp"
-                            android:fontFamily="@font/avenirltstd_light"
-                            android:text="Temporary"
-                            android:textSize="@dimen/_15sdp"
-                            android:textStyle="bold"
-                            android:layout_gravity="center"
-                            android:textColor="@color/colorDark"
-                            android:gravity="center"
-
-
-                            />
-
-
-
-                        />
-
-
-                    </LinearLayout>
-
-
-
-
-
-
-                </androidx.cardview.widget.CardView>
-
-
-
-                <ImageView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_margin="@dimen/_5sdp"
-                    android:src="@drawable/temp"
-                    android:scaleType="fitXY"
-
-
-                    />
-
-
-
-
-            </LinearLayout>
-
-
-
-
-
-        </androidx.cardview.widget.CardView>
-
-
-    </RelativeLayout>
 
 
 
