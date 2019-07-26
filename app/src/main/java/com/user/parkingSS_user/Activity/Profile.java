@@ -63,8 +63,9 @@ btn_signout = findViewById(R.id.btn_signout);
         yes.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(Profile.this,MainActivity.class);
+                Intent intent = new Intent(Profile.this,Login_User.class);
                 startActivity(intent);
+                finish();
 
             }
         });

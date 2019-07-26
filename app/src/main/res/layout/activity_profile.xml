@@ -68,7 +68,7 @@
                     android:fontFamily="@font/avenirltstd_light"
                     android:text="Profile"
                     android:textColor="@color/colorWhite"
-                    android:textSize="@dimen/_18sdp"
+                    android:textSize="@dimen/_15sdp"
                     android:layout_centerInParent="true"
                     android:textStyle="bold"
                     android:gravity="center"

@@ -37,11 +37,13 @@ public class Req_Driver extends AppCompatActivity {
             public void onClick(View v) {
                 Intent intent = new Intent(Req_Driver.this,Status.class);
                 startActivity(intent);
+                finish();
             }
         });
         ab.setView(v1);
 
         ab.show();
+
 
     }
 }
