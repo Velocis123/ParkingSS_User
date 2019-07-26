@@ -131,9 +131,10 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="@dimen/_200sdp"
+            android:layout_height="wrap_content"
             android:layout_below="@+id/rel4"
-            android:layout_marginBottom="@dimen/_70sdp"
+            android:id="@+id/rel5"
+
             android:layout_marginTop="@dimen/_20sdp"
             >
 
@@ -268,6 +269,51 @@
                 </LinearLayout>
             </androidx.cardview.widget.CardView>
 
+
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_below="@+id/rel5"
+
+            android:background="@color/colorWhite"
+         android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginBottom="@dimen/_2sdp"
+            android:layout_alignParentBottom="true"
+
+            >
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_35sdp"
+                app:cardBackgroundColor="@color/colorAccent"
+
+                android:layout_marginTop="@dimen/_3sdp"
+                android:layout_marginBottom="@dimen/_3sdp"
+                app:cardCornerRadius="@dimen/_3sdp"
+                android:layout_marginLeft="@dimen/_25sdp"
+                android:layout_marginRight="@dimen/_25sdp"
+                >
+
+
+                <Button
+                    android:id="@+id/btn_signout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+
+                    android:background="@color/colorPrimary"
+                    android:fontFamily="@font/avenirltstd_light"
+                    android:text="Sign Out"
+                    android:gravity="center"
+                    android:textAllCaps="false"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="@dimen/_13sdp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
         </RelativeLayout>
 
     </RelativeLayout>
